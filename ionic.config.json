@@ -1,0 +1,7 @@
+{
+  "name": "policeapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
