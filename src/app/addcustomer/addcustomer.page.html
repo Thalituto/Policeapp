@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar color="danger">
+   
+     
+      <ion-title class="titleicon">Alerte</ion-title>
+   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+  
+
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+ 
+  <ion-grid>
+
+  	<ion-item>
+        <ion-label>Urgence</ion-label>
+        <ion-select placeholder="" [(ngModel)]="item.motif">
+          <ion-select-option value="Meurtre">Meurtre</ion-select-option>
+          <ion-select-option value="Kidnapping">Kidnapping</ion-select-option>
+          <ion-select-option value="Accident">Accident</ion-select-option>
+          <ion-select-option value="Cambriolage">Cambriolage</ion-select-option>
+          <ion-select-option value="Agression">Agression</ion-select-option>
+          <ion-select-option value="Viol"> Viol</ion-select-option>
+          
+          <ion-select-option value="Bagarre">Bagarre</ion-select-option>
+          <ion-select-option value="Braquage">Braquage</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-toolbar class="select" color="danger">
+   
+      <ion-title class="titleicon">Sélectionner le motif<ion-icon name="arrow-up"></ion-icon></ion-title>
+      
+      </ion-toolbar>
+      <div class="center">
+	
+	<ion-button  shape="round" color="danger"  (click)="addItem(item)" > <ion-icon class="icon"name="finger-print"></ion-icon></ion-button>
+</div>
+</ion-grid>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-text color="danger">
+      <h4 ></h4>
+    </ion-text>
+ 
+
+	 
+  </ion-toolbar>
+</ion-footer>

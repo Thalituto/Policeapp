@@ -1,20 +1,47 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>POLICEAPP</ion-title>
+    
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
+<ion-content padding class="background">
+  <div class="ion-padding">
+
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Coordonnées Gps</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>
+        Latitude
+      </ion-label>
+      <ion-badge color="danger" slot="end">{{latitude}}</ion-badge>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Longitude
+      </ion-label>
+      <ion-badge color="danger" slot="end">{{longitude}}</ion-badge>
+    </ion-item>
+    </ion-list>    
   </div>
+  
 </ion-content>
+
+<ion-footer> 
+  
+   
+    <div class="position">
+    
+        <ion-item>Latitude: {{ latitude }}</ion-item>
+      <ion-item>Longitude: {{ longitude }}</ion-item>
+ 
+    </div>
+</ion-footer> 

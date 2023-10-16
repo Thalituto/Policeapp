@@ -1,0 +1,97 @@
+.boutton {
+	width:85px;
+	height:85px;
+	background:#cc0000;
+	font:bold 13px Arial;
+	border-radius:50%;
+	border:none;
+	color:#fff;
+}
+ion-grid {
+    width:100%;
+   
+   
+}
+.center{
+	margin-top: 35px;
+	margin-left: 10px;
+	text-align: center;
+	position:absolute;
+	
+	top:28%;
+	-webkit-transform: translate(-49%,-49%);
+	transform: translate (-49%,-49%);
+	width:90%;}
+	
+	ion-item{
+		border-radius: 50px 20px 30px 10px;
+		
+		background:#cc0000;
+		border-color: #cc0000;
+		margin-top: 35px;
+	}
+	.icon {
+		width: 40px;
+		height: 40px;	
+	}
+	ion-button{
+
+	
+	width: 120px;
+	height: 120px;
+	border-radius: 40px;
+	border-color: darkgrey;
+	border: #000;
+	}
+	
+	input{
+		--color:#000;
+		--padding-bottom:15px;
+		--padding-top:5px;
+		--padding-start:5px;
+		font-size:15px;
+		text-indent:1px;
+		padding-left:10px !important;
+	}
+
+	
+.select{margin-top: 5px;}
+
+	.bouton-rouge {
+		background-color: red;
+	}
+
+
+	.ripple-parent {
+		position: relative;
+		overflow: hidden;
+	  }
+
+	  
+ion-content.background{
+    --background: url(../../assets/polic.jpg) 0 0/100% 100% no-repeat;
+}
+
+
+ion-title{
+	text-align: center;
+
+}
+.item .item-input {
+    background-color: transparent;
+}
+
+
+.logo-img{
+	display:block;
+	width:50px;
+	margin:0 auto;
+	text-align:center;
+	text-align: left;
+	position: left;
+	}
+	.titleicon div{
+		
+		font-size: large;
+		text-align: center;
+		}
